@@ -4,7 +4,7 @@
   let player;
   let game;
 
-  const socket = io.connect('http://localhost:8005');
+  const socket = io.connect('https://tic-tac-toe-socketio.onrender.com');
 
   class Player {
       constructor(name, type) {
