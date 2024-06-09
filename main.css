@@ -1,0 +1,92 @@
+body {
+	background-color: #f0f0f0;
+	font-family: Arial, sans-serif;
+}
+.container {
+	max-width: 800px;
+	margin: 0 auto;
+	padding: 20px;
+}
+.menu, .gameBoard {
+	background: #ffffff;
+	padding: 20px;
+	border-radius: 10px;
+	box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+h1 {
+	color: #333;
+	text-align: center;
+	margin-bottom: 20px;
+}
+.instructions {
+	background: #e0e0e0;
+	padding: 10px;
+	border-radius: 10px;
+	margin-bottom: 20px;
+}
+.instructions h3 {
+	color: #333;
+}
+.instructions ol {
+	list-style-type: decimal;
+	margin: 10px 0;
+	padding-left: 20px;
+}
+.instructions li {
+	margin: 5px 0;
+}
+.input-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.input-container input[type="text"],
+.input-container button {
+	margin: 10px 0;
+	padding: 10px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	width: 80%;
+	max-width: 300px;
+}
+.input-container button {
+	background-color: #5bc0de;
+	color: #fff;
+	border: none;
+	text-align: center;
+	font-size: 16px;
+	cursor: pointer;
+	padding: 0;
+}
+.input-container button:hover {
+	background-color: #31b0d5;
+}
+.tile {
+	width: 80px;
+	height: 80px;
+	font-size: 60px;
+	font-family: Helvetica;
+	cursor: pointer;
+	transition: background-color 0.3s;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border: 1px solid #ccc;
+}
+.tile:hover {
+	background-color: #f0f0f0;
+}
+.center {
+	margin: 0 auto;
+	text-align: center;
+}
+.x {
+	color: #ff6347;
+}
+.o {
+	color: #4682b4;
+}
+#userHello, #turn {
+	font-size: 16px;
+	color: #333;
+}

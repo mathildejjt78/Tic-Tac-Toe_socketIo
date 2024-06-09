@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Tic Tac Toe</title>
+		<link rel="stylesheet" href="main.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css">
+	</head>
+	<body>
+        <div class="container">
+            <div class="instructions">
+                <h3>Comment jouer</h3>
+                <ol>
+                    <li>Joueur 1 : créez un nouveau jeu en entrant votre nom d'utilisateur.</li>
+                    <li>Joueur 2 : entrez un autre nom d'utilisateur et l'ID de la salle affichée sur la première fenêtre.</li>
+                    <li>Cliquez sur "Rejoindre le jeu".</li>
+                </ol>
+            </div>
+            <div class="menu">
+                <h1>Tic - Tac - Toe</h1>
+                <h4>Créer un nouveau jeu</h4>
+                <div class="input-container">
+                    <input type="text" name="name" id="nameNew" placeholder="Entrez votre nom" required>
+                    <button id="new">Nouveau Jeu</button>
+                </div>
+                <br><br>
+                <h4>Rejoindre un jeu existant</h4>
+                <div class="input-container">
+                    <input type="text" name="name" id="nameJoin" placeholder="Entrez votre nom" required>
+                    <input type="text" name="room" id="room" placeholder="Entrez l'ID du jeu" required>
+                    <button id="join">Rejoindre le Jeu</button>
+                </div>
+            </div>
+            <div class="gameBoard" style="display: none;">
+                <h2 id="userHello"></h2>
+                <h3 id="turn"></h3>
+                <table class="center">
+                    <tr>
+                        <td><button class="tile" id="button_00"></button></td>
+                        <td><button class="tile" id="button_01"></button></td>
+                        <td><button class="tile" id="button_02"></button></td>
+                    </tr>
+                    <tr>
+                        <td><button class="tile" id="button_10"></button></td>
+                        <td><button class="tile" id="button_11"></button></td>
+                        <td><button class="tile" id="button_12"></button></td>
+                    </tr>
+                    <tr>
+                        <td><button class="tile" id="button_20"></button></td>
+                        <td><button class="tile" id="button_21"></button></td>
+                        <td><button class="tile" id="button_22"></button></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <script src="node_modules/jquery/dist/jquery.min.js"></script>
+        <script src="/socket.io/socket.io.js"></script>
+        <script src="main.js"></script>
+    </body>
+</html>
